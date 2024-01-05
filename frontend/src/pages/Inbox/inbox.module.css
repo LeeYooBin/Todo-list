@@ -1,0 +1,21 @@
+.inbox {
+  padding: 3rem 5rem;
+}
+
+.line {
+  margin: .8rem 0;
+  width: 100%;
+  opacity: 0.2;
+}
+
+@media screen and (min-width: 760px) {
+  .inbox {
+    padding: 3rem 15rem;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .inbox {
+    padding: 3rem 47rem;
+  }
+}

@@ -1,0 +1,36 @@
+.button {
+  margin-top: 2rem;
+  color: var(--dark-white-color);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+}
+
+.icon {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 920px) {
+  .icon {
+    font-size: 2rem;
+  }
+  
+  .button:hover .text {
+    color: var(--dark-blue-color);
+  }
+
+  .button:hover .icon {
+    background: var(--dark-blue-color);
+  }
+}

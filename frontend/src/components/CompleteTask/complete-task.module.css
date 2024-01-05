@@ -1,0 +1,55 @@
+.modal_screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  backdrop-filter: blur(1rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+}
+
+.modal {
+  background-color: var(--dark-color-2);
+  width: 80%;
+  height: auto;
+  padding: 5rem 3rem;
+  position: relative;
+  color: var(--dark-white-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.description {
+  font-size: 1.4rem;
+  max-width: 50%;
+}
+
+.date {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.close_button {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  font-size: 2rem;
+  color: var(--dark-white-color);
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}

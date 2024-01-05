@@ -1,0 +1,72 @@
+.form {
+  background: transparent;
+  border: .1rem solid var(--dark-color-2);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title_input,
+.description_input,
+.date_input,
+.title_input::placeholder,
+.description_input::placeholder {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--white-color);
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.description_input {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  resize: none;
+  overflow-y: hidden;
+}
+
+.date_input {
+  width: 50%;
+}
+
+.date_input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(1) brightness(100%) sepia(0%) saturate(100%) hue-rotate(0deg);
+}
+
+.button_wrapper {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.close_button, .send_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .8rem;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--white-color);
+}
+
+.close_button {
+  background-color: var(--dark-color-2);
+}
+
+.send_button {
+  background-color: var(--red-color);
+}
+
+@media screen and (min-width: 760px) {
+  .date_input {
+    width: 23%;
+  }
+}
